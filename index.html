@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+    .container{
+      margin-top: 30px;
+      width: 40%;
+    }
+  </style>
+  <body>
+    
+    <div class="container">
+        <nav>
+            <div class="nav nav-pills nav-fill" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="step1-tab" data-toggle="tab" href="#step1">Bài tập 1</a>
+              <a class="nav-link" id="step2-tab" data-toggle="tab" href="#step2">Bài tập 2</a>
+              <a class="nav-link" id="step3-tab" data-toggle="tab" href="#step3">Bài tập 3</a>
+              <a class="nav-link" id="step4-tab" data-toggle="tab" href="#step4">Bài tập 4</a>
+              <a class="nav-link" id="step5-tab" data-toggle="tab" href="#step5">Bài tập 5</a>
+            </div>
+          </nav>
+          <!-- bài tập 1 -->
+          <div class="tab-content py-4" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="step1">
+              <h4>Bài tập 1</h4>
+              <div class="mb-3">
+                <label for="soNgayLam" class="font-weight-bold mt-5rem text-success">Nhập số ngày làm:</label>
+                <input type="text" class="form-control" id="soNgayLam" required>
+              </div>
+              <div class="mb-3">
+                <span>Tổng lương là:</span>
+                <label for="first_name" id="xuatLuong"> </label>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-auto">
+                  <button type="button" class="btn btn-success" data-enchanter="next" onclick="XuatKQ1()">Xuất kết quả</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- bài tập 2 -->
+            <div class="tab-pane fade" id="step2">
+              <h4>Bài tập 2</h4>
+              <div class="mb-3">
+                <label for="nhapSoThuc">Nhập số thực thứ nhất</label>
+                <input type="number" class="form-control" id="nhapSoThuc1" required>
+              </div>
+              <div class="mb-3">
+                <label for="nhapSoThuc">Nhập số thực thứ hai</label>
+                <input type="number" class="form-control" id="nhapSoThuc2">
+              </div>
+              <div class="mb-3">
+                <label for="nhapSoThuc">Nhập số thực thứ ba</label>
+                <input type="number" class="form-control" id="nhapSoThuc3">
+              </div>
+              <div class="mb-3">
+                <label for="nhapSoThuc">Nhập số thực thứ bốn</label>
+                <input type="number" class="form-control" id="nhapSoThuc4">
+              </div>
+              <div class="mb-3">
+                <label for="nhapSoThuc">Nhập số thực thứ năm</label>
+                <input type="number" class="form-control" id="nhapSoThuc5">
+              </div>
+              <div class="mb-3">
+                <span>Giá trị trung bình của 5 số thực là:</span>
+                <label for="first_name" id="xuatGiaTriTrungBinh"> </label>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-auto">
+                  <button type="button" class="btn btn-success" data-enchanter="next" onclick="XuatKQ2()">Xuất kết quả</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- bài tập 3 -->
+            <div class="tab-pane fade" id="step3">
+              <h4>Bài tập 3</h4>
+              <div class="mb-3">
+                <label for="quyDoiTien" class="font-weight-bold mt-5rem text-success">Nhập số tiền $:</label>
+                <input type="text" class="form-control" id="quyDoiTien" required>
+              </div>
+              <div class="mb-3">
+                <span>Giá trị quy đổi sang tiền Việt là:</span>
+                <label for="first_name" id="quyDoiSangTienViet"> </label>
+              </div>
+              <div class="row justify-content-end">
+                <div class="col-auto">
+                  <button type="button" class="btn btn-success" data-enchanter="next" onclick="XuatKQ3()">Xuất kết quả</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- bài tập 4 -->
+            <div class="tab-pane fade" id="step4">
+                <h4>Bài tập 4</h4>
+                <div class="mb-3">
+                  <label for="chieuDai" class="font-weight-bold mt-5rem text-success">Nhập chiều dài hình chữ nhật:</label>
+                  <input type="text" class="form-control" id="chieuDai" required>
+                </div>
+                <div class="mb-3">
+                  <label for="chieuRong" class="font-weight-bold mt-5rem text-success">Nhập chiều rộng hình chữ nhật:</label>
+                  <input type="text" class="form-control" id="chieuRong" required>
+                </div>
+                <div class="mb-3">
+                  <span>Diện tích hình chữ nhật là:</span>
+                  <label for="first_name" id="dienTich"> </label>
+                </div>
+                <div class="mb-3">
+                  <span>Chu vi hình chữ nhật là:</span>
+                  <label for="first_name" id="chuVi"> </label>
+                </div>
+                <div class="row justify-content-end">
+                  <div class="col-auto">
+                    <button type="button" class="btn btn-success" data-enchanter="next" onclick="XuatKQ4()">Xuất kết quả</button>
+                  </div>
+                </div>
+              </div>
+
+            <!-- bài tập 5 -->
+              <div class="tab-pane fade" id="step5">
+                <h4>Bài tập 5</h4>
+                <div class="mb-3">
+                  <label for="nhapSo2ChuSo" class="font-weight-bold mt-5rem text-success">Nhập số có 2 chữ số:</label>
+                  <input type="text" class="form-control" id="nhapSo2ChuSo" required>
+                </div>
+                <div class="mb-3">
+                  <span>Tổng 2 ký số là:</span>
+                  <label for="first_name" id="xuatTong2ChuSo"> </label>
+                </div>
+                <div class="row justify-content-end">
+                  <div class="col-auto">
+                    <button type="button" class="btn btn-success" data-enchanter="next" onclick="XuatKQ5()">Xuất kết quả</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          
+        </nav>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./enchanter-master/dist/enchanter.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
